@@ -8,11 +8,15 @@
     --color-fondo: #C7E8F3;
     --color-tarjetas: #e683aa;
     --color-texto: #41393E;
+    --color-sombra: #41393E;
 }
-
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
+    background-image: linear-gradient(
+        var(--color-fondo),
+        var(--color-secundario)
+    );
 }
 
 header {
@@ -35,6 +39,7 @@ main {
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px var(--color-sombra);
 }
 
 .tarjeta h2 {
